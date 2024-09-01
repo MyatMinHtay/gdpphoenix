@@ -1,27 +1,61 @@
 
+ <!-- Start Footer Section  -->
 
-<div class="footernav mx-auto mt-3 p-2">
-                
-    <div class="col-3 my-2 rounded-pill footernavitem">
-      <a href="https://www.facebook.com/morningstartranslationmm" class="text-decoration-none"><i class="fa-brands fa-facebook"></i></a>
-      
-    </div>
 
-    <div class="col-3 my-2 rounded-pill footernavitem">
-      <a href="https://t.me/+6joB1RGpK-8xMjNl" class="text-decoration-none"><i class="fa-brands fa-telegram"></i></a>
-    </div>
+  <div class="container">
 
-    <div class="col-3 my-2 rounded-pill footernavitem"> 
-      <a href="mailto:morningstartranslationmm@proton.me" class="text-decoration-none"><i class="fa-solid fa-envelope"></i></a>
-    </div>
-  
-    <div class="col-3 my-2 rounded-pill footernavitem"> 
-      <a href="https://discord.gg/Z5rwYxqDps" class="text-decoration-none" target="_blank"><i class="fa-brands fa-discord"></i></a>
-    </div>
-   
+    <footer class="bg-dark px-5">
+      <div class="row text-light py-4">
+
+          <div class="col-lg-3 col-sm-6">
+              <h5 class="pb-3">About Us</h5>
+              <p class="small">Develop your carrer ဆိုတဲ့ သင်အတွက် လူသား ဘဝလက်တွဲဖော် သူငယ်ချင်းကောင်းတစ်ယောက်ပါ။</p>
+
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+              <h5>Visit Us</h5>
+              
+              <ul class="list-unstyled">
+                  <li><a href="/" class="footerlinks">Home</a></li>
+                  <li><a href="/about" class="footerlinks">About</a></li>
+                  <li><a href="/donate" class="footerlinks">Donate</a></li>
+                  <li><a href="/courses" class="footerlinks">Courses</a></li>
+                  
+              </ul>
+              
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+              <h5>Need Help?</h5>
+              <ul class="list-unstyled">
+                  <li><a href="#" class="text-uppercase footerlinks">Customer</a></li>
+                  <li><a href="#" class="text-uppercase footerlinks">Online Chat</a></li>
+                  <li><a href="#" class="text-uppercase footerlinks">Support</a></li>
+                  <li><a href="#" class="text-uppercase footerlinks">info@amz.com</a></li>
+                  
+              </ul>
+              
+          </div>
+
+          <div class="col-lg-3 col-sm-6">
+              <h5>Donate</h5>
+              <p class="small">မိတ်ဆွေအတွက် Develop your career ကအကျိုးရှိလို့ Donate လုပ်ချင်ရင် အောက် က Donate Buttom ကိုနှိပ်ပါ။</p>
+              
+              <a href="/donate" class="btn btn-primarys">Donate</a>
+          </div>
+
+      </div>
+
     
-</div>
+      <div class="row">
+          <div class="col-12 text-center text-light border-top">
+              <p>&copy; <span id="showyears"></span> Copyright, All Rights Reserved</p>
+          </div>
+      </div>
 
-<footer class="col-12 text-center mt-3">
-<p>&copy; <span id="showyears"></span> Copyright, All Rights Reserved</p>
-</footer>
+    </footer>
+  </div>
+
+
+<!-- End Footer Section  -->

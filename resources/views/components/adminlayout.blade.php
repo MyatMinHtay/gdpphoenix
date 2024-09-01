@@ -40,10 +40,10 @@
 
     
     
-  <x-navbar></x-navbar>
+  <x-adminnavbar></x-adminnavbar>
   {{-- {{$content}} --}}
    {{$slot}}
-   <x-footer></x-footer>
+  
 
 
     {{-- fontawesome css1 js1  --}}
