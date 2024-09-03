@@ -5,12 +5,19 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\VideoController;
 use App\Http\Middleware\Logincheck;
+use App\Models\Video;
 use App\Models\VideoCategory;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('home');
+
+    $videos = Video::inRandomOrder()->take(3)->get();
+
+    return view('home',[
+        'videos' => $videos
+    ]);
+    
 });
 
 
@@ -25,7 +32,7 @@ Route::post('/login',[AuthController::class,'login']);
 
 Route::get('/admin',[UserController::class,'gologin']);
 Route::get('/courses',[VideoController::class,'showcourses']);
-
+Route::get('/courses/details/{video:videoslug}',[VideoController::class,'showdetails']);
 
 Route::middleware([Logincheck::class])->group(function () {
 

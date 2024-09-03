@@ -17,6 +17,7 @@ class VideoController extends Controller
 
         $videotitle = $request->input('videotitle');
        
+       
         if($videotitle){
             $query = Video::query();
 
@@ -28,9 +29,9 @@ class VideoController extends Controller
             $videos = $query->paginate(30);
 
            
-     }else{
-        $videos =  Video::latest()->paginate(30)->withQueryString();
-     }
+        }else{
+            $videos =  Video::latest()->paginate(30)->withQueryString();
+        }  
      
 
         return view('video/index',[
@@ -39,11 +40,18 @@ class VideoController extends Controller
     }
 
     //show courses 
-    public function showcourses(){
-        $videos =  Video::latest()->paginate(30)->withQueryString();
+    public function showcourses(Request $request){
+
+        $categories = Category::all();
+        $videos =  Video::latest()
+            ->filter(request(['videotitle','category','username']))
+            ->paginate(15)
+            ->withQueryString();
+
 
         return view('courses',[
-            'videos' => $videos
+            'videos' => $videos,
+            'categories' => $categories
         ]);
     }
 
@@ -235,6 +243,21 @@ class VideoController extends Controller
                 return back()->withErrors(['error' => $e->getMessage()]);
             }
        }
+    }
+
+    public function showdetails(Video $video){
+
+        $categories = Category::all();
+        $popularvideos = Video::take(10)->get();
+
+
+    
+
+        return view('details',[
+            'video' => $video,
+            'categories' => $categories,
+            'popularvideos' => $popularvideos
+        ]);
     }
 
 

@@ -16,7 +16,7 @@
                             <a href="/donate" class="btn btn-primarys text-white">Donate</a>
                         
                        
-                            <a href="/aboutus" class="text-decoration-none">
+                            <a href="/about" class="text-decoration-none">
                                 <i class="fa-solid fa-play mx-2 fs-2 text-primarys"></i>
                                 What is DYC?
                             </a>
@@ -26,7 +26,7 @@
                 
             </div>
             <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-                <img src="{{ asset('assets/img/2.png') }}" width="80%" alt="">
+                <img src="{{ asset('assets/img/operator.png') }}" width="80%" alt="">
             </div>
            </div>
         </div>
@@ -66,11 +66,11 @@
                         <p class="text-center">Search Courses</p>
                     
                         <div class="col-12 d-flex  justify-content-center">
-                            <form action="" class="searchform d-flex flex-wrap">
+                            <form action="/courses" class="searchform d-flex flex-wrap">
                                  
                                     <div class="form-group searchdiv my-1">
                                         <i class="fa-solid fa-magnifying-glass searchicon"></i>
-                                        <input type="search" name="searchvideo" class="searchbox form-control mx-1" id="" placeholder="Search For over 50+ courses">
+                                        <input type="search" name="videotitle" class="searchbox form-control mx-1" id="" placeholder="Search For over 50+ courses">
                                      </div>
                                
                                
@@ -152,71 +152,28 @@
             </div>
 
             <div class="row justify-content-center align-items-center">
-                <div class="card m-3 p-2" style="width: 18rem;">
-                    <img src="{{asset('assets/img/thumbnail.png')}}" class="card-img-top" alt="...">
+                @forelse ($videos as $video)
+            
+                <div class="card m-3 p-2 col-11 col-md-4 col-lg-3">
+                    <a href="./courses/{{$video->videoslug}}" class="text-center text-dark text-decoration-none d-inline-block">
+                    <img src="{{ asset($video->videothumbnail) }}" width="100px" class="card-img-top" alt="...">
                     <div class="card-body py-2 px-1">
-                      <h5 class="card-title d-flex justify-content-between align-items-center">
-                        
-                           <span class="badge text-bg-secondary text-white">
+                        <h6 class="card-title text-start">
                             
-                             Notifications
-                           
-                           </span>
-
-                           <span class="badge text-bg-secondary">$40</span>
-                          
-                      </h5>
-                      <h3 class="card-text">Web Design & Development</h3>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <div class="d-flex justify-content-center align-items-center">
-                        <a href="#" class="btn btn-primary text-center">Enroll Now</a>
-                      </div>
-                    </div>
-                </div>
-
-                <div class="card m-3 p-2" style="width: 18rem;">
-                    <img src="{{asset('assets/img/thumbnail.png')}}" class="card-img-top" alt="...">
-                    <div class="card-body py-2 px-1">
-                      <h5 class="card-title d-flex justify-content-between align-items-center">
-                        
-                           <span class="badge text-bg-secondary text-white">
+                            {{$video->videotitle}}
                             
-                             Notifications
-                           
-                           </span>
-
-                           <span class="badge text-bg-secondary">$40</span>
-                          
-                      </h5>
-                      <h3 class="card-text">Web Design & Development</h3>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <div class="d-flex justify-content-center align-items-center">
-                        <a href="#" class="btn btn-primary text-center">Enroll Now</a>
-                      </div>
+                        </h6>
+                        <p class="text-start">{{$video->created_at->diffForHumans()}}</p>
+                    
+                    
+                      
                     </div>
+                </a>
                 </div>
-
-                <div class="card m-3 p-2" style="width: 18rem;">
-                    <img src="{{asset('assets/img/thumbnail.png')}}" class="card-img-top" alt="...">
-                    <div class="card-body py-2 px-1">
-                      <h5 class="card-title d-flex justify-content-between align-items-center">
-                        
-                           <span class="badge text-bg-secondary text-white">
-                            
-                             Notifications
-                           
-                           </span>
-
-                           <span class="badge text-bg-secondary">$40</span>
-                          
-                      </h5>
-                      <h3 class="card-text">Web Design & Development</h3>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <div class="d-flex justify-content-center align-items-center">
-                        <a href="#" class="btn btn-primary text-center">Enroll Now</a>
-                      </div>
-                    </div>
-                </div>
+            
+            @empty
+                
+            @endforelse
 
             </div>
         </div>

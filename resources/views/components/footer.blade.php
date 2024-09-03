@@ -4,19 +4,20 @@
 
   <div class="container">
 
-    <footer class="bg-dark px-5">
+    <footer class="bg-primarys px-5">
       <div class="row text-light py-4">
 
-          <div class="col-lg-3 col-sm-6">
-              <h5 class="pb-3">About Us</h5>
-              <p class="small">Develop your carrer ဆိုတဲ့ သင်အတွက် လူသား ဘဝလက်တွဲဖော် သူငယ်ချင်းကောင်းတစ်ယောက်ပါ။</p>
+            <div class="col-lg-3 col-sm-6">
+                <h5 class="pb-3">About Us</h5>
+                <p class="small">Develop your carrer ဆိုတဲ့ သင်အတွက် လူသား ဘဝလက်တွဲဖော် သူငယ်ချင်းကောင်းတစ်ယောက်ပါ။</p>
 
-          </div>
+            </div>
 
           <div class="col-lg-3 col-sm-6">
               <h5>Visit Us</h5>
               
               <ul class="list-unstyled">
+                
                   <li><a href="/" class="footerlinks">Home</a></li>
                   <li><a href="/about" class="footerlinks">About</a></li>
                   <li><a href="/donate" class="footerlinks">Donate</a></li>
@@ -28,6 +29,7 @@
 
           <div class="col-lg-3 col-sm-6">
               <h5>Need Help?</h5>
+              
               <ul class="list-unstyled">
                   <li><a href="#" class="text-uppercase footerlinks">Customer</a></li>
                   <li><a href="#" class="text-uppercase footerlinks">Online Chat</a></li>

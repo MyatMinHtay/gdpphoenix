@@ -32,6 +32,9 @@
     {{-- swiper css 1 js 1 --}}
     <link rel="stylesheet" href="{{ asset('./assets/css/swiper-bundle.min.css') }}">  
     <script src="{{ asset('./assets/js/swiper-bundle.min.js') }}"></script>
+
+     {{-- flickity css 1 js1  --}}
+    <link rel="stylesheet" href="{{ asset('assets/css/flickity.css') }}">  
    
     <!-- custom css -->
     <link href="{{ asset('./assets/css/style.css') }}?v=1" rel="stylesheet" type="text/css" />
@@ -51,6 +54,10 @@
 
     <!-- jquery js1  -->
     <script src="{{ asset('./assets/js/jquery.min.js') }}" type="text/javascript"></script>
+
+    {{-- flickity css 1 js1  --}}
+    
+    <script src="{{ asset('assets/js/flickity.pkgd.min.js') }}"></script>
 
     {{-- jquery ui css 1 js1 --}}
 

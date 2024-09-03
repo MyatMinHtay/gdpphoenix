@@ -41,9 +41,11 @@
                                     required
                                     
                                     id="videothumbnail" placeholder="Video Thumbnail">
-                                    <div class="col-12 my-2 displayfixer" id="thumbnail-preview"></div>
+                                    
                                     <x-error name="videothumbnail"></x-error>
                                </div>
+
+                               <div class="col-12 my-2 displayfixer" id="thumbnail-preview"></div>
 
                                
                                
