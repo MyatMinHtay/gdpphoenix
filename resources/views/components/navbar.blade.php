@@ -7,7 +7,7 @@
       <header id="home">
         <!-- Start Navbar  -->
         
-            <nav class="navbar navbar-expand-lg sticky-top">
+            <nav class="navbar navbar-expand-lg fixed-top">
             
                 <a class="navbar-brand displayfixer p-1" href="/">
                     <div class="barndcontainer">
@@ -27,9 +27,16 @@
                 <div class="navbar-collapse collapse justify-content-end text-uppercase fw-bolder" id="nav">
                     <ul class="navbar-nav">
                         <li class="navbar-item"><a href="/" class="nav-link m-2 menuitems">Home</a></li>
-                        <li class="navbar-item"><a href="/about" class="nav-link m-2 menuitems">About</a></li>
-                        <li class="navbar-item"><a href="/donate" class="nav-link m-2 menuitems">Donate</a></li>
+                        {{-- <li class="navbar-item"><a href="/about" class="nav-link m-2 menuitems">About</a></li> --}}
+                        
                         <li class="navbar-item"><a href="/courses" class="nav-link m-2 menuitems">Courses</a></li>
+                        <li class="navbar-item"><a href="/donate" class="nav-link m-2 menuitems">Donate</a></li>
+
+                        <li class="navbar-item"><a href="/jobs" class="nav-link m-2 menuitems">Jobs</a></li>
+
+                        <li class="navbar-item"><a href="/community" class="nav-link m-2 menuitems">Community</a></li>
+
+                        <li class="navbar-item"><a href="/research" class="nav-link m-2 menuitems">Research</a></li>
                         
                         @auth
                             <li class="navbar-item"><a href="/dashboard" class="nav-link m-2 menuitems">Dashboard</a></li>
@@ -50,6 +57,10 @@
 
 
       </header>
+    </div>
+
+    <div class="extencontainer">
+        
     </div>
 <!-- End Header  -->
 

@@ -25,7 +25,21 @@ Route::get('/about',function(){
     return view('about');
 });
 
+Route::get('/jobs',function(){
+    return view('gotolivechat');
+});
 
+Route::get('/research',function(){
+    return view('gotolivechat');
+});
+
+Route::get('/donate',function(){
+    return view('donate');
+});
+
+Route::get('/community',function(){
+    return view('gotolivechat');
+});
 
 
 Route::post('/login',[AuthController::class,'login']);

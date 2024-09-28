@@ -39,6 +39,7 @@
     <!-- custom css -->
     <link href="{{ asset('./assets/css/style.css') }}?v=1" rel="stylesheet" type="text/css" />
      
+    
 <body id="nightbody" onload="dayornightcheck()">
 
     
@@ -46,6 +47,8 @@
   <x-navbar></x-navbar>
   {{-- {{$content}} --}}
    {{$slot}}
+
+  
    <x-footer></x-footer>
 
 

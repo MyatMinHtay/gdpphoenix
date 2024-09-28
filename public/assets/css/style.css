@@ -95,6 +95,11 @@ body{
    text-decoration: none;
 }
 
+.extencontainer{
+  width: 100%;
+  height: 100px;
+}
+
 .displayfixer{
   display: flex;
   justify-content: center;
@@ -202,6 +207,14 @@ body{
       opacity: 1;
   }
 }
+
+.logoimg{
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+}
+
+
 /* End Banner  */
 
 
@@ -291,6 +304,20 @@ body{
 
 /* Start About Us  */
 
+.aboutusrow{
+  background: var(--thirdcolor);
+}
+
+
+.vocationalbox{
+  width: 100%;
+  height: 400px;
+  /* height: 500px; */
+  background: url('../img/vocational.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
 /* End About Us  */
 
 /* Start Footer Section  */
@@ -311,8 +338,38 @@ body{
 /* End Footer Section  */
 
 
+/* Start Jobs Research Community  */
+
+.gotolivechatcontainer{
+  height: 50vh;
+  font-size: 25px;
+}
 
 
+/* End Jobs Research Community  */
+
+/* start donate section  */
+.donateinfobox{
+  margin: 20px 0px;
+  height: 100px;
+  background-color: var(--thirdcolor);
+
+  box-shadow: 1px 1px 5px var(--thirdcolor);
+  padding: 10px 20px;
+
+  border-radius: 15px;
+
+}
+
+.donateheader{
+  color: black;
+  font-weight: bold;
+}
+
+.donateinfo{
+  font-size: 16px;
+}
+/* end donate section  */
 
 
 /*Start Admin Dashboard  */
@@ -365,3 +422,9 @@ box-shadow:  -8px -8px 10px #de91cc,
 
 
 /* End Admin Dashboard  */
+
+@media only screen and (max-width: 768px) {
+  .donateinfo{
+    font-size: 14px;
+  }
+}

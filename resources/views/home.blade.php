@@ -26,7 +26,7 @@
                 
             </div>
             <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-                <img src="{{ asset('assets/img/operator.png') }}" width="80%" alt="">
+                <img src="{{ asset('assets/img/model.png') }}" width="80%" alt="">
             </div>
            </div>
         </div>
@@ -47,12 +47,28 @@
         <div class="logosection mb-5">
             <div class="row justify-content-between align-items-center bg-primarys logocontainers">
                 <div class="col-2 py-4 text-center d-flex justify-content-center align-items-center">
-                    dulingo
+                    <img src="{{asset('assets/img/tesla.png')}}" class="logoimg" alt="">
+                    Tesla
                 </div>
-                <div class="col-2 py-4 text-center d-flex justify-content-center align-items-center"><i class="fa-brands fa-microsoft mx-1 fs-2"></i>magicleap</div>
-                <div class="col-2 py-4 text-center d-flex justify-content-center align-items-center"><i class="fa-brands fa-microsoft mx-1 fs-2"></i>Microsoft</div>
-                <div class="col-2 py-4 text-center d-flex justify-content-center align-items-center"><i class="fa-brands fa-microsoft mx-1 fs-2"></i>Codecov</div>
-                <div class="col-2 d-none d-lg-flex py-4 text-center d-flex justify-content-center align-items-center"><i class="fa-brands fa-microsoft mx-1 fs-2"></i>Testing</div>
+                <div class="col-2 py-4 text-center d-flex justify-content-center align-items-center">
+                    <img src="{{asset('assets/img/neuralink.png')}}" class="logoimg" alt="">
+                    Neuralink
+                </div>
+                <div class="col-2 py-4 text-center d-flex justify-content-center align-items-center">
+                    <img src="{{asset('assets/img/spacex.png')}}" class="logoimg" alt="">
+                    Space X
+                </div>
+
+                <div class="col-2 py-4 text-center d-flex justify-content-center align-items-center">
+                    <img src="{{asset('assets/img/trump.png')}}" class="logoimg" alt="">
+                    Trump
+                
+                </div>
+
+                <div class="col-2 d-none d-lg-flex py-4 text-center d-flex justify-content-center align-items-center">
+                    <img src="{{asset('assets/img/chatgpt.png')}}" class="logoimg" alt="">
+                    Chat Gpt
+                </div>
             </div>
         </div>
     </div>
@@ -91,8 +107,8 @@
 
                         <div class="col-12 col-md-6 d-flex flex-wrap p-3">
                             <div class="titlecontainer ms-3">
-                                <h3>Benifits From Our Online</h3>
-                                <h3>Learning</h3>
+                                <h3>Benefits From Our Online Live Chat</h3>
+                                
                             </div>
                            
                             
@@ -101,18 +117,19 @@
                                         <i class="fa-solid fa-graduation-cap benifiticons"></i>
                                     </div>
                                     <div class="benifitstext p-1">
-                                        <h6>Online Degrees</h6>
+                                        <h6>Say With Graduated People</h6>
                                         <p> နိုင်ငံတကာ အဆင့်မှီ စီးပွားရေး ပညာတတ်တွေနဲ့ပြောရမှာဖြစ်လို့ စီပွားရေးအတွက် အရမ်းအကျိုးရှိခြင်း။</p>
                                     </div>
                                 </div>
 
                                 <div class="benifits d-flex justify-content-between align-items-center">
                                     <div class="col-2 displayfixer">
-                                        <i class="fa-solid fa-book-open benifiticons"></i>
+                                        {{-- <i class="fa-solid fa-book-open benifiticons"></i> --}}
+                                        <i class="fa-solid fa-kit-medical benifiticons"></i>
                                     </div>
                                     <div class="benifitstext p-1">
-                                        <h6>Short Courses</h6>
-                                        <p>PFA ကျွမ်းကျင် နှလုံးသား နူးညံ့သူ၊ ချောမောပြေပြစ်သူတွေနဲ့ ပြောရမှာ ဖြစ်လို့ အထီးကျန်မှု့ ၊ စိတ်ဖိစီးမှု့တွေ သက်သာသွားခြင်း။</p>
+                                        <h6>Free PFA</h6>
+                                        <p>PFA (Psychological First Aid ) ကျွမ်းကျင် နှလုံးသား နူးညံ့သူ၊ ချောမောပြေပြစ်သူတွေနဲ့ ပြောရမှာ ဖြစ်လို့ အထီးကျန်မှု့ ၊ စိတ်ဖိစီးမှု့တွေ သက်သာသွားခြင်း။</p>
                                     </div>
                                 </div>
 
@@ -122,7 +139,7 @@
                                        
                                     </div>
                                     <div class="benifitstext p-1">
-                                        <h6>Training From Expects</h6>
+                                        <h6>Make Friend With Experience People</h6>
                                         <p>ဘဝအကြောင်းကို အတွေ့အကြုံရင့်ကျက်သူတွေနဲ့ ပြောရမှာဖြစ်လို့ ဘဝ အခက်အခဲတွေပြေလည်သွားခြင်း။</p>
                                     </div>
                                 </div>
@@ -133,7 +150,7 @@
                                         
                                     </div>
                                     <div class="benifitstext p-1">
-                                        <h6>1.5k video Courses</h6>
+                                        <h6>Powerful Video Courses</h6>
                                         <p>ကိုယ်ပိုင် စီးပွားရေးလုပ်လိုသူတွေအတွက် သက်မွေးပညာ Lesson Videos တွေ Website မှာတင်ထားပေးလို့ ကိုယ်ပိုင်စီးပွားရေးလုပ်လိုသူတွေအတွက် များစွာအကျိုးရှိခြင်း။</p>
                                     </div>
                                 </div>
@@ -155,7 +172,8 @@
                 @forelse ($videos as $video)
             
                 <div class="card m-3 p-2 col-11 col-md-4 col-lg-3">
-                    <a href="./courses/{{$video->videoslug}}" class="text-center text-dark text-decoration-none d-inline-block">
+                    
+                    <a href="./courses/details/{{$video->videoslug}}" class="text-center text-dark text-decoration-none d-inline-block">
                     <img src="{{ asset($video->videothumbnail) }}" width="100px" class="card-img-top" alt="...">
                     <div class="card-body py-2 px-1">
                         <h6 class="card-title text-start">
