@@ -7,7 +7,7 @@
            <div class="row">
             <div class="col-12 col-md-6">
                 
-                <div class="col-11 mx-auto p-3">
+                <div class="col-11 mx-auto p-1 p-lg-3">
                     <h1>Let's talk with a real human.</h1>
                     <p class="h5 py-3 bannertext"> Develop your carrer ဆိုတာ သင့်အတွက် လူသား လက်တွဲဖော် သူငယ်ချင်းကောင်းတစ်ယောက်ပါ။  DYC နဲ့ ပြောဖို့ ညာဘက်အောက်ထောင့်က Message ခလုတ်လေးကို နှိပ်လိုက်ရင် စီးပွားရေး ၊ ပညာရေး အကုန် ပြောဆို ဆွေးနွေးလို့ ရပါပြီ။စိတ်ညစ်ရင်လည်း ရင်ဖွင့်လို့ ရပါသေးတယ်။လူသားစစ်စစ်နဲ့ ပြောရမှာဖြစ်လို့ Chat GPT ထက် ပိုကောင်းပါတယ်။</p>
                     <div class="py-4 livedemobuttoncontainer d-flex justify-content-between">
@@ -44,22 +44,22 @@
     </div>
 
     <div class="container">
-        <div class="logosection mb-5">
+        <div class="logosection mb-5 col-12 mx-auto">
             <div class="row justify-content-between align-items-center bg-primarys logocontainers">
-                <div class="col-2 py-4 text-center d-flex justify-content-center align-items-center">
+                <div class="col-2 py-4 text-center d-none d-lg-flex justify-content-center align-items-center">
                     <img src="{{asset('assets/img/tesla.png')}}" class="logoimg" alt="">
                     Tesla
                 </div>
-                <div class="col-2 py-4 text-center d-flex justify-content-center align-items-center">
+                <div class="col-3 col-lg-2 py-4 text-center fz-10 d-flex justify-content-center align-items-center">
                     <img src="{{asset('assets/img/neuralink.png')}}" class="logoimg" alt="">
                     Neuralink
                 </div>
-                <div class="col-2 py-4 text-center d-flex justify-content-center align-items-center">
+                <div class="col-6 col-lg-2 py-4 text-center fz-10 d-flex justify-content-center align-items-center">
                     <img src="{{asset('assets/img/spacex.png')}}" class="logoimg" alt="">
                     Space X
                 </div>
 
-                <div class="col-2 py-4 text-center d-flex justify-content-center align-items-center">
+                <div class="col-3 col-lg-2 py-4 text-center fz-10 d-flex justify-content-center align-items-center">
                     <img src="{{asset('assets/img/trump.png')}}" class="logoimg" alt="">
                     Trump
                 
@@ -77,27 +77,7 @@
 
         <div class="searchcoursecontainer">
             <div class="row">
-                <div class="col-10 mx-auto">
-                    <div class="row justify-content-center">
-                        <p class="text-center">Search Courses</p>
-                    
-                        <div class="col-12 d-flex  justify-content-center">
-                            <form action="/courses" class="searchform d-flex flex-wrap">
-                                 
-                                    <div class="form-group searchdiv my-1">
-                                        <i class="fa-solid fa-magnifying-glass searchicon"></i>
-                                        <input type="search" name="videotitle" class="searchbox form-control mx-1" id="" placeholder="Search For over 50+ courses">
-                                     </div>
-                               
-                               
-                                    <button type="submit" class="btn btn-primarys text-white mx-1 my-1">Search</button>
-                               
-                            </form>
-                        </div>
-                    </div>
-
-                    
-                </div>
+              
 
                 <div class="col-12 py-3">
                     <div class="row">
@@ -164,7 +144,7 @@
 
         <div class="popularcourses bg-thirds p-3">
             <h1 class="text-center text-bold">Our Popular Courses</h1>
-            <div class="col-8 mx-auto">
+            <div class="col-12 col-lg-8 mx-auto">
                 <p class="text-center">Our courses are trusted by professionals worldwide to deliver real, measurable results.</p>
             </div>
 
@@ -194,9 +174,31 @@
             @endforelse
 
             </div>
+
+            <div class="col-10 mx-auto">
+                <div class="row justify-content-center">
+                    <p class="text-center">Search Courses</p>
+                
+                    <div class="d-flex justify-content-center">
+                        <form action="/courses" class="searchform d-flex flex-column flex-lg-row g-5">
+                             
+                                <div class="form-group searchdiv my-1">
+                                    <i class="fa-solid fa-magnifying-glass searchicon"></i>
+                                    <input type="search" name="videotitle" class="searchbox form-control mx-1" id="" placeholder="Search For over 50+ courses">
+                                 </div>
+                           
+                           
+                                <button type="submit" class="btn btn-primarys  text-white mx-3 my-1">Search</button>
+                           
+                        </form>
+                    </div>
+                </div>
+
+                
+            </div>
         </div>
 
-        <div class="instructor p-5">
+        <div class="instructor p-lg-5">
             <div class="row">
                 <h1 class="text-center my-5">Other Benifit</h1>
                 <div class="col-12 col-md-6 p-3">

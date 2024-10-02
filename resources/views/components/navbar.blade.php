@@ -13,7 +13,7 @@
                     <div class="barndcontainer">
                        
                     </div>
-                    <span class="navbarfontsize mx-2 brandtext">Develop Your Career</span>
+                    <span class="navbarfontsize mx-1 brandtext">Develop Your Career</span>
       
                 </a>
                 

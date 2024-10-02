@@ -45,7 +45,9 @@
                                     <x-error name="videothumbnail"></x-error>
                                </div>
 
-                               <div class="col-12 my-2 displayfixer" id="thumbnail-preview"></div>
+                               <div class="col-10 mx-auto p-2 my-2 displayfixer" id="thumbnail-preview">
+                                   
+                               </div>
 
                                
                                
@@ -105,7 +107,7 @@
                                </div>
 
                                <div class="form-group col-12 d-flex justify-content-end">
-                                    <a href="/admin/videos" class="btn btn-thirds mx-2">Cancel</a>
+                                    <a href="/videos" class="btn btn-thirds mx-2">Cancel</a>
                                     <button type="submit" class="btn btn-primarys">Create</button>
                                </div>
 

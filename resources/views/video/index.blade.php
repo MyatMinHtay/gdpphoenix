@@ -83,8 +83,10 @@
                          <img src="{{ asset($video->videothumbnail) }}" width="100px" alt="...">
                         </td>
 
-                       
-                        <td scope="row">{{$video->videodescription}}</td>
+                      
+                    
+                   
+                        <td scope="row">{{ Str::words($video->videodescription, 30, '...') }}</td>
                         <td scope="row">{{$video->videolink}}</td>
 
                       
@@ -93,7 +95,7 @@
                         <td scope="row" class="text-center"><a href="/admin/videos/edit/{{$video->videoslug}}"  class="btn btn-info"><i class="fa-solid fa-pen-to-square"></i></a></td>
                         
                        
-                        <td scope="row" class="text-center"><a href="/admin/videos/delete/{{$video->videoslug}}" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a></td>
+                        <td scope="row" class="text-center"><a href="/admin/videos/delete/{{$video->videoslug}}"  onclick="return confirmDelete();"  class="btn btn-danger"><i class="fa-solid fa-trash"></i></a></td>
                    </tr>
                    
                    
@@ -116,3 +118,11 @@
  
   
 </x-adminlayout>
+
+<script type="text/javascript">
+
+function confirmDelete() {
+    return confirm('Are you sure you want to delete this video?');
+}
+
+</script>

@@ -89,6 +89,10 @@ body{
   transition: all 0.7s;
 }
 
+.navbar-toggler{
+  padding: 4px;
+}
+
 .navbar-toggler:focus{
    box-shadow: none;
    outline: 0;
@@ -119,6 +123,10 @@ body{
   justify-content: center;
   align-items: center;
   
+}
+
+.fz-10{
+  font-size: 10px;
 }
 
 .brandtext{
@@ -251,8 +259,10 @@ body{
 /* Start Search Courses Section  */
 
 .searchbox{
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   padding-left: 30px;
+  margin-left: 10px;
 }
 
 .searchdiv{
@@ -386,7 +396,7 @@ box-shadow:  -8px -8px 10px #de91cc,
 
 #thumbnail-preview img{
 
-  width: 400px;
+  width: 100%;
 
 }
 

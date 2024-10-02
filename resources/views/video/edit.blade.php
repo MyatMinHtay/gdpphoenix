@@ -119,7 +119,7 @@
                            </div>
 
                            <div class="form-group col-12 d-flex justify-content-end">
-                                <a href="/admin/videos" class="btn btn-thirds mx-2">Cancel</a>
+                                <a href="/videos" class="btn btn-thirds mx-2">Cancel</a>
                                 <button type="submit" class="btn btn-primarys">Update</button>
                            </div>
 

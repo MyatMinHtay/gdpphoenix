@@ -26,7 +26,7 @@
                                   <td>{{$category->categoryname}}</td>
                                  
                                   <td><a  class="btn btn-warning editgenre"><i class="fa-solid fa-pen-to-square"></i></a></td>
-                                  <td><a href="/admin/category/delete/{{$category->categoryname}}" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a></td>
+                                  <td><a href="/admin/category/delete/{{$category->categoryname}}"  onclick="return confirmDelete();"  class="btn btn-danger"><i class="fa-solid fa-trash"></i></a></td>
                              </tr>
                         @empty
                              
@@ -117,4 +117,10 @@
 
               });
        });
+
+
+       function confirmDelete() {
+          return confirm('Are you sure you want to delete this category?');
+     }
+       
 </script>

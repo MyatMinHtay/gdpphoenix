@@ -71,7 +71,9 @@
                         
                         <th scope="col">Edit</th>
                         
-                        <th scope="col">Delete</th>
+                        <th scope="col">Lock</th>
+                        <th scope="col">Un Lock</th>
+                        
                    </thead>
                    <tbody>
                     @forelse ($users as $user)
@@ -88,7 +90,8 @@
                          <td scope="row" class="text-center"><a href="/admin/users/edit/{{$user->username}}"  class="btn btn-info"><i class="fa-solid fa-pen-to-square"></i></a></td>
                          
                         
-                         <td scope="row" class="text-center"><a href="/admin/users/delete/{{$user->username}}" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a></td>
+                         <td scope="row" class="text-center"><a href="/admin/users/lock/{{$user->username}}" onclick="confirm('Are you sure lock this account?')" class="btn btn-danger"><i class="fa-solid fa-trash"></i></a></td>
+                         <td scope="row" class="text-center"><a href="/admin/users/unlock/{{$user->username}}" onclick="confirm('Are you sure unlock this account?')" class="btn btn-success"><i class="fa-solid fa-unlock"></i></a></td>
                     </tr>
                     
                     

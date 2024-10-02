@@ -66,11 +66,7 @@
                       Category</a>
                </li>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="/contactmessages">
-                       <i class="fa-solid fa-message fs-5 icon"></i>
-                       Contact messages</a>
-                </li>
+              
 
                 <li class="nav-item">
                   <a class="nav-link" href="/users">

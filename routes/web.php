@@ -58,7 +58,7 @@ Route::middleware([Logincheck::class])->group(function () {
     Route::get('/admin/users/edit/{user:username}',[UserController::class,'edituser'])->where('username','[A-Za-z0-9_\-]+');
     Route::post('/admin/users/update/{user:username}',[UserController::class,'updateuser'])->where('username','[A-Za-z0-9_\-]+');
     Route::get('/admin/users/lock/{user:username}',[UserController::class,'lockuser'])->where('username','[A-Za-z0-9_\-]+');
-    Route::get('/admin/users/unlock/{user:username}',[UserController::class,'lockuser'])->where('username','[A-Za-z0-9_\-]+');
+    Route::get('/admin/users/unlock/{user:username}',[UserController::class,'unlockuser'])->where('username','[A-Za-z0-9_\-]+');
     
 
     //video crud

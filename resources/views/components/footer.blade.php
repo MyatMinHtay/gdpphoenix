@@ -15,13 +15,13 @@
     <footer class="bg-primarys px-5">
       <div class="row text-light py-4">
 
-            <div class="col-lg-3 col-sm-6">
+            <div class="col-lg-4 col-sm-6">
                 <h5 class="pb-3">About Us</h5>
                 <p class="small">Develop your carrer ဆိုတဲ့ သင်အတွက် လူသား ဘဝလက်တွဲဖော် သူငယ်ချင်းကောင်းတစ်ယောက်ပါ။</p>
 
             </div>
 
-          <div class="col-lg-3 col-sm-6">
+          <div class="col-lg-4 col-sm-6">
               <h5>Visit Us</h5>
               
               <ul class="list-unstyled">
@@ -35,7 +35,7 @@
               
           </div>
 
-          <div class="col-lg-3 col-sm-6">
+          {{-- <div class="col-lg-3 col-sm-6">
               <h5>Need Help?</h5>
               
               <ul class="list-unstyled">
@@ -46,9 +46,9 @@
                   
               </ul>
               
-          </div>
+          </div> --}}
 
-          <div class="col-lg-3 col-sm-6">
+          <div class="col-lg-4 col-sm-6">
               <h5>Donate</h5>
               <p class="small">မိတ်ဆွေအတွက် Develop your career ကအကျိုးရှိလို့ Donate လုပ်ချင်ရင် အောက် က Donate Buttom ကိုနှိပ်ပါ။</p>
               
