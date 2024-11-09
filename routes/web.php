@@ -1,14 +1,16 @@
 <?php
 
-use App\Http\Controllers\AuthController;
-use App\Http\Controllers\CategoryController;
-use App\Http\Controllers\UserController;
-use App\Http\Controllers\VideoController;
-use App\Http\Middleware\Logincheck;
+use App\Models\User;
 use App\Models\Video;
 use App\Models\VideoCategory;
+use App\Http\Middleware\Logincheck;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\VideoController;
+use App\Http\Controllers\CategoryController;
+use App\Models\Category;
 
 Route::get('/', function () {
 
@@ -18,6 +20,20 @@ Route::get('/', function () {
         'videos' => $videos
     ]);
     
+});
+
+Route::get('/sitemap',function(){
+  
+
+    // Retrieve active properties, ordered by ID in descending order
+    $videos = Video::orderBy('id', 'desc')->get();
+    $categories = Category::all();
+
+
+    // Return the XML response, passing posts, blogs, and model data to the sitemap view
+    return response()->view('sitemap', compact('videos','categories'))
+                     ->header('Content-Type', 'text/xml');
+
 });
 
 
