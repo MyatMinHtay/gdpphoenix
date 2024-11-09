@@ -14,7 +14,7 @@
     <meta property="og:image" content="{{ asset('./assets/img/logo.jpg') }}" />
     <meta property="og:url" content="https://dycmyanmar.com/" />
 
-
+   
     <title>Develop Your Career</title>
 
     <!-- favicon  -->
@@ -51,7 +51,7 @@
 
 
   <x-navbar></x-navbar>
-  {{-- {{$content}} --}}
+  
    {{$slot}}
 
 
