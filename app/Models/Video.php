@@ -18,35 +18,36 @@ class Video extends Model
         'videoslug',
         'videodescription',
         'videothumbnail',
+        'videokeywords',
         'created_by'
     ];
 
     public function scopeFilter($query,$filter){  //Blog::latest()->filter()
-            
+
         $query->when($filter['videotitle'] ?? false,function($query,$videotitle){
 
            $query->where(function ($query) use ($videotitle){
                $query->where('videotitle','LIKE','%'.$videotitle.'%');
-         
+
            });
-           
-          
+
+
        });
 
 
        $query->when($filter['category'] ?? false,function($query,$category){
 
-       
+
            $query->whereHas('categories',function($query) use ($category){
                    $query->where('categoryname',$category);
            });
-       
+
        });
 
-       
 
-      
-   } 
+
+
+   }
 
     public function videocategory(){
         return $this->hasMany(VideoCategory::class,'video_id');
@@ -58,5 +59,5 @@ class Video extends Model
     }
 
 
-   
+
 }

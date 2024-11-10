@@ -9,7 +9,7 @@
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-   
+
 
 
     @if(isset($video))
@@ -26,7 +26,7 @@
     @endif
 
 
-   
+
     <title>{{ $video->videotitle }}</title>
 
  <!-- favicon  -->
@@ -66,13 +66,14 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-8">
+            <div class="col-12 col-md-8" itemscope itemtype="http://schema.org/Course">
                 <article>
                     <iframe width="100%" height="400" src="{{$video->videolink}}" frameborder="0" allowfullscreen></iframe>
-                    
-                    <h1>{{$video->videotitle}}</h1>
+
+                    <h1 itemprop="name">{{$video->videotitle}}</h1>
                     <p>Uploaded by admin</p>
-                    <p class="videodescription">{{$video->videodescription}}</p>
+                    <meta itemprop="dateCreated" content="{{$video->created_at}}">
+                    <p class="videodescription" itemprop="description">{{$video->videodescription}}</p>
                 </article>
             </div>
 

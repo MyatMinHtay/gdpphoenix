@@ -11,10 +11,13 @@
 
     <meta property="og:title" content="DYC Myanmar" />
     <meta property="og:description" content="Looking for professional guidance in Myanmar? Our Free Consult Service offers you personalized advice without any charge. Whether you're navigating legal, financial, educational, or health-related decisions, our dedicated team is here to help. Accessible and committed to your success, we provide clear, reliable guidance tailored to your needs. Empower yourself today with expert support and make informed decisions for a brighter future. Connect with us for a free consultation!" />
+    
     <meta property="og:image" content="{{ asset('./assets/img/logo.jpg') }}" />
-    <meta property="og:url" content="https://dycmyanmar.com/" />
+    <meta property="og:url" content="{{ url()->current() }}" />
 
-   
+    <meta name="keywords" content="dyc myanmar,free consult service,free consult service in myanmar,business,knowledge,advice,entrepreneurship,my world career,rise for career,small business in myanmar,small business ideas in myanmar">
+
+
     <title>Develop Your Career</title>
 
     <!-- favicon  -->
@@ -51,7 +54,7 @@
 
 
   <x-navbar></x-navbar>
-  
+
    {{$slot}}
 
 

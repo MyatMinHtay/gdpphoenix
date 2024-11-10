@@ -59,6 +59,18 @@
                                     <x-error name="videodescription"></x-error>
                                </div>
 
+                               <div class="form-group mb-3">
+                                    <label for="videokeywords">Video Keywords</label>
+                                    <input
+                                    type="text" class="form-control inputbox"
+                                    name="videokeywords"
+                                    required
+
+                                    id="videokeywords" placeholder="eg. business,education,knowledge">
+
+                                    <x-error name="videokeywords"></x-error>
+                                </div>
+
 
 
 

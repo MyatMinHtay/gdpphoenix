@@ -72,6 +72,7 @@ class VideoController extends Controller
             'videoslug' => 'required',
             'videodescription' => 'nullable',
             'videolink' => 'required',
+            'vidoekeywords' => 'nullable',
             'videocategories' => 'required',
 
             'videothumbnail' => ['mimes:jpeg,png,jpg', 'max:10240'],
@@ -154,6 +155,7 @@ class VideoController extends Controller
             'videoslug' => 'required',
             'videodescription' => 'nullable',
             'videolink' => 'required',
+            'videokeywords' => 'nullable',
             'videocategories' => 'required',
 
             'videothumbnail' => ['mimes:jpeg,png,jpg', 'max:10240', 'sometimes'],
